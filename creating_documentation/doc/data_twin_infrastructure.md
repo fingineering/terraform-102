@@ -29,5 +29,19 @@ No outputs.
 This visual is created using `terraform graph` and the GraphViz library
 
 ![Gaph](doc/infrastructure_graph.png)
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [azurerm_resource_group.my_data_twin](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group) | resource |
+| [azurerm_client_config.current](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config) | data source |
+| [azurerm_subscription.primary_sub](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/subscription) | data source |
+
+## Modules
+
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_datatwin"></a> [datatwin](#module\_datatwin) | ./data_twin | n/a |
 <!-- END_TF_DOCS -->
 ![Gaph](infrastructure_graph.png)

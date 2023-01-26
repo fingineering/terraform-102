@@ -31,6 +31,10 @@ content: |-
   
   {{ include "doc/graph.md" }}
 
+  {{ .Resources }}
+
+  {{ .Modules }}
+
 output:
   file: "doc/data_twin_infrastructure.md"
   mode: inject
