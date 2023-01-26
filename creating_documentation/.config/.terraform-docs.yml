@@ -27,6 +27,10 @@ content: |-
 
   {{ .Outputs }}
 
+  ## Graphical Visualisation of Terraform dependency graph
+  
+  {{ include "doc/infrastructure_graph.png" }}
+
 output:
   file: ""
   mode: inject
