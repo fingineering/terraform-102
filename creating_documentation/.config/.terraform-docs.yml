@@ -6,7 +6,7 @@ header-from: main.tf
 footer-from: ""
 
 recursive:
-  enabled: false
+  enabled: true
   path: data_twin
 
 sections:
@@ -32,12 +32,12 @@ content: |-
   {{ include "doc/graph.md" }}
 
 output:
-  file: ""
+  file: "doc/data_twin_infrastructure.md"
   mode: inject
   template: |-
     <!-- BEGIN_TF_DOCS -->
     {{ .Content }}
-    <!-- END_TF_DOCS -->    
+    <!-- END_TF_DOCS -->
 
 output-values:
   enabled: false
