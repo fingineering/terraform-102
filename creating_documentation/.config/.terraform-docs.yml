@@ -29,7 +29,7 @@ content: |-
 
   ## Graphical Visualisation of Terraform dependency graph
   
-  {{ include "doc/infrastructure_graph.png" }}
+  {{ include "doc/graph.md" }}
 
 output:
   file: ""
