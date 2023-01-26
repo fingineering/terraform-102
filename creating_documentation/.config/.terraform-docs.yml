@@ -35,6 +35,10 @@ content: |-
 
   {{ .Modules }}
 
+  {{ range .Module.Resources }}
+  - {{ .GetMode }}.{{ .Spec }} ({{ .Position.Filename }}#{{ .Position.Line }})
+  {{- end }}
+
 output:
   file: "doc/data_twin_infrastructure.md"
   mode: inject

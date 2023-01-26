@@ -28,7 +28,7 @@ No outputs.
 
 This visual is created using `terraform graph` and the GraphViz library
 
-![Gaph](doc/infrastructure_graph.png)
+![Gaph](infrastructure_graph.png)
 
 ## Resources
 
@@ -43,5 +43,10 @@ This visual is created using `terraform graph` and the GraphViz library
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_datatwin"></a> [datatwin](#module\_datatwin) | ./data_twin | n/a |
+
+
+- resource.azurerm_resource_group.my_data_twin (main.tf#41)
+- data source.azurerm_client_config.current (main.tf#36)
+- data source.azurerm_subscription.primary_sub (main.tf#37)
 <!-- END_TF_DOCS -->
 ![Gaph](infrastructure_graph.png)
