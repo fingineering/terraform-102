@@ -28,5 +28,5 @@ No outputs.
 
 This visual is created using `terraform graph` and the GraphViz library
 
-![Gaph](doc/infrastructure_graph.png)
 <!-- END_TF_DOCS -->
+![Gaph](infrastructure_graph.png)
