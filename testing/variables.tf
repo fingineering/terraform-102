@@ -7,3 +7,8 @@ variable "SUBSCRIPTION" {
     error_message = "Not a valid uuid"
   }
 }
+
+variable "LOCATION" {
+  type = string
+  default = "westeurope"
+}
