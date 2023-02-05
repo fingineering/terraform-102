@@ -54,5 +54,6 @@ module "datatwin" {
     object_id      = data.azurerm_client_config.current.object_id
     tenant_id      = data.azurerm_client_config.current.tenant_id
     user_principal = "Azure Adminitrator"
+    # you can set this to your user name az account show --query user.name
   }
 }
