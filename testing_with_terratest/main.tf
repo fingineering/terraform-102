@@ -52,6 +52,15 @@ resource "azurerm_mssql_database" "demo_database" {
   storage_account_type = "Zone"
 }
 
+// create a static site
+resource "azurerm_static_site" "my-test-site" {
+  name = "fjskgnrsraa"
+  resource_group_name = azurerm_resource_group.my-conform-group.name
+  location = var.LOCATION
+  sku_size = "Free"
+  sku_tier = "Free"
+}
+
 
 output "group-name" {
   value       = azurerm_resource_group.my-conform-group.name
@@ -65,4 +74,9 @@ output "group-name" {
 output "sql-server-name" {
   value = azurerm_mssql_server.demo_server.name
   description = "The name of the newly created mssql server"
+}
+
+output "static-site-name" {
+  value = azurerm_static_site.my-test-site.default_host_name
+  description = "Hostname of the resulting web site"
 }
